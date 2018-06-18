@@ -1,21 +1,42 @@
-import React from "react";
-import App from "./App"
+import React, { Component } from "react";
 
-class InputForm extends App {
+class InputForm extends Component {
   constructor() {
     super();
     this.state = {
-      names: ""
+      inputNames: ""
     };
   }
-  render(){
-      console.log('in Inpurform',props)
-      return(
-            <div>
-                Enter name:
-                <input type="text" value={this.state.names}/>
-            </div>
-      )
+  handleChange(event) {
+    this.setState({
+      inputNames: event.target.value
+    });
+  }
+  handleSubmit = event => {
+    event.preventDefault();
+    console.log("new name", this.state.inputNames);
+    const newName = this.state.inputNames;
+    this.props.addName(newName);
+    this.setState({
+      inputNames: ""
+    });
+    console.log("in handlesubmit", newName);
+  };
+  render() {
+    console.log("in Inpurform");
+    return (
+      <div>
+        <form onSubmit={event => this.handleSubmit(event)}>
+          Enter name:
+          <input
+            type="text"
+            value={this.state.inputNames}
+            onChange={event => this.handleChange(event)}
+          />
+          <button>Add more Names</button>
+        </form>
+      </div>
+    );
   }
 }
 export default InputForm;

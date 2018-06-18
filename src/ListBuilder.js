@@ -1,6 +1,6 @@
 import React from "react";
 const ListBuilder = props => {
-  console.log('in List bUilder',props.list);
+  console.log("in List bUilder", props.list);
   return (
     <div>
       <ul>
