@@ -21,12 +21,6 @@ class App extends Component {
     const randomNumber = math.randomInt(length);
     this.setState({ luckyWinnerIndex: randomNumber });
   }
-  handleInputChange = event => {
-    this.setState = {
-      value: event.target.value
-    };
-  };
-
   render() {
     return (
       <div>
