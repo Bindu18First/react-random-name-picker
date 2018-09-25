@@ -31,10 +31,6 @@ class App extends Component {
           list={this.state.names}
           luckyWinnerIndex={this.state.luckyWinnerIndex}
         />
-        {/* <form >
-          <input value={this.state.value} onChange={this.handleInputChange} />
-          <button  type="submit">Add more Names</button>
-        </form> */}
       </div>
     );
   }

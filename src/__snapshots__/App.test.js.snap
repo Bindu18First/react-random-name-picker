@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders div with some snapshot 1`] = `
+<div>
+  <h1
+    id="app-title"
+  >
+    Hello random name picker
+  </h1>
+  <RandomClick
+    handleClick={[Function]}
+  />
+  <InputForm
+    addName={[Function]}
+  />
+  <ListBuilder
+    list={
+      Array [
+        "gordon",
+        "sahil",
+        "david",
+        "sally",
+        "jane",
+        "alice",
+      ]
+    }
+    luckyWinnerIndex={null}
+  />
+</div>
+`;
