@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import math from "mathjs";
-import RandomClick from "./RandomClick";
-import ListBuilder from "./ListBuilder";
-import InputForm from "./InputForm";
+import RandomClick from "../RandomClick/RandomClick";
+import ListBuilder from "../ListBuilder/ListBuilder";
+import InputForm from "../InputForm/InputForm";
 class App extends Component {
   constructor() {
     super();
